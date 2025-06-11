@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import FeedbackForm from './pages/FeedbackForm';
 import SuccessPage from './pages/SuccessPage';
 import FeedbackList from './pages/FeedbackList';
