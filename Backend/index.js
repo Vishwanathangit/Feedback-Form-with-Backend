@@ -33,12 +33,3 @@ app.get("/api/feedbacks", (req,res) => {
 app.listen(PORT,()=>{
     console.log("Server Started...")
 })
-
-const path = require("path");
-
-// Serve frontend
-app.use(express.static(path.join(__dirname, "../Frontend/dist")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Frontend/dist/index.html"));
-});
