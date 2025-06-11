@@ -5,7 +5,7 @@ function FeedbackList() {
   const [feedbacks, setFeedbacks] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/feedbacks')
+    axios.get('https://feedback-form-with-backend.onrender.com/api/feedbacks')
       .then(res => {
         setFeedbacks(res.data);
       })

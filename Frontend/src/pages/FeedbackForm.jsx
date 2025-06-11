@@ -28,7 +28,7 @@ function FeedbackForm() {
     }
 
     try {
-      await axios.post("http://localhost:3000/api/feedback", formData);
+      await axios.post("https://feedback-form-with-backend.onrender.com/api/feedback", formData);
       setError('');
       navigate('/success'); // Redirect to success page
     } catch (err) {
